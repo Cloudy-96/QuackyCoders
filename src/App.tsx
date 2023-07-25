@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./components/About";
 import "./App.css";
 
 function App() {
@@ -6,9 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header bg-primary flex items-center justify-center text-left gap-12">
         <div className="w-96">
-          <p className="font-bold align-text-top my-6 text-xl">
-            Quacky Coders
-          </p>
+          <p className="font-bold align-text-top my-6 text-xl">Quacky Coders</p>
           <h1 className="text-5xl my-6 ">
             Revolutionize your debugging with monthly rubber ducks!
           </h1>
@@ -24,6 +23,8 @@ function App() {
           alt="rubber duck decoding"
         />
       </header>
+
+      <About />
     </div>
   );
 }
