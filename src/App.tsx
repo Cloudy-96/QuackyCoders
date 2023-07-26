@@ -1,6 +1,8 @@
 import React from "react";
-import About from "./components/About";
 import "./App.css";
+
+import About from "./components/About";
+import Subcription from "./components/Subscription";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
       </header>
 
       <About />
+      <Subcription />
     </div>
   );
 }

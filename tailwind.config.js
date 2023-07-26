@@ -8,7 +8,7 @@ module.exports = {
         darkBlue: "#023047",
         lightBlue: "#219EBC",
         orange: "#FB8500",
-        greyFill: "#F2F2F2",
+        grey: "#F2F2F2",
       },
       extend: {
         keyframes: {
