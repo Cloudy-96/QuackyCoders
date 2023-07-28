@@ -3,6 +3,8 @@ import "./App.css";
 
 import About from "./components/About";
 import Subcription from "./components/Subscription";
+import DuckBenefits from "./components/DuckBenefits";
+import FAQs from "./components/FAQs";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
 
       <About />
       <Subcription />
+      <DuckBenefits />
+      <FAQs />
     </div>
   );
 }
