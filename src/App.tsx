@@ -5,12 +5,13 @@ import About from "./components/About";
 import Subcription from "./components/Subscription";
 import DuckBenefits from "./components/DuckBenefits";
 import FAQs from "./components/FAQs";
+import Story from "./components/Story";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header bg-primary flex items-center justify-center text-left gap-12">
-        <div className="w-96">
+    <div className="App inline-block">
+      <header className="App-header bg-primary flex items-center text-left gap-12">
+        <div className="w-screen p-60">
           <p className="font-bold align-text-top my-6 text-xl">Quacky Coders</p>
           <h1 className="text-5xl my-6 ">
             Revolutionize your debugging with monthly rubber ducks!
@@ -32,6 +33,7 @@ function App() {
       <Subcription />
       <DuckBenefits />
       <FAQs />
+      <Story />
     </div>
   );
 }
