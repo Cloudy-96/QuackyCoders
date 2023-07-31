@@ -7,6 +7,7 @@ import DuckBenefits from "./components/DuckBenefits";
 import FAQs from "./components/FAQs";
 import Story from "./components/Story";
 import Newsletter from "./components/Subscribe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
       <FAQs />
       <Story />
       <Newsletter />
+
+      <Footer />
     </div>
   );
 }
