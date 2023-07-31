@@ -6,6 +6,7 @@ import Subcription from "./components/Subscription";
 import DuckBenefits from "./components/DuckBenefits";
 import FAQs from "./components/FAQs";
 import Story from "./components/Story";
+import Newsletter from "./components/Subscribe";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <DuckBenefits />
       <FAQs />
       <Story />
+      <Newsletter />
     </div>
   );
 }
