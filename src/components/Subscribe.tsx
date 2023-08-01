@@ -1,7 +1,9 @@
 export default function Newsletter() {
   return (
-    <section className="grid justify-center gap-12">
-      <h1 className="uppercase">Join our Quacktastic Newsletter</h1>
+    <section className="grid justify-center gap-12 p-24">
+      <h1 className="uppercase text-3xl font-bold">
+        Join our Quacktastic Newsletter
+      </h1>
 
       <form className="grid gap-2">
         <input

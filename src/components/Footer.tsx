@@ -11,11 +11,11 @@ export default function Footer() {
   return (
     <section className="grid justify-center gap-12">
       {/* TODO: Make way bigger */}
-      <h1 className="font-extrabold text-9xl ">2023</h1>
+      <h1 className="font-extrabold text-[30em] ">2023</h1>
 
       <ul className="flex gap-24 justify-center">
         {socials.map((social) => (
-          <li className="flex justify-center align-center w-28 h-28 bg-darkBlue rounded">
+          <li key={social.id} className="flex justify-center align-center w-28 h-28 bg-darkBlue rounded">
             <a
               className="text-white"
               href={social.socialLink}
