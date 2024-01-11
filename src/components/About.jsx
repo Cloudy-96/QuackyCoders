@@ -20,7 +20,7 @@ export default function About() {
         <div className="w-[100%] lg:max-w-[1310px] flex flex-row-reverse space-y-3 h-[300px] bg-[#1211118f] rounded-lg shadow-sm gap-3">
           <div className="w-[50%] relative">
             <img
-              className="h-full w-full absolute object-cover object-center rounded-lg hue-rotate-60"
+              className="h-full w-full absolute object-cover object-center rounded-lg hue-rotate-60 -scale-x-[1]"
               src={cards[0].img}
               alt="Lots of rubber ducks"
             />
