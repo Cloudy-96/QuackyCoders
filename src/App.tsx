@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import About from "./components/About";
+import About from "./components/About.jsx";
 import Subcription from "./components/Subscription";
 import DuckBenefits from "./components/DuckBenefits";
 import FAQs from "./components/FAQs";
@@ -13,12 +13,11 @@ function App() {
   return (
     <div className="App inline-block">
       <nav>
-        <ul className="flex w-[100%] gap-6 p-3 *:text-[15px]">
+        <ul className="flex w-[100%] gap-6 p-3 *:text-[20px]">
           <li>About Us</li>
           <li>Subscriptions</li>
           <li>FAQ</li>
           <li>contact us</li>
-          <li></li>
         </ul>
       </nav>
       <header className="App-header bg-primary flex items-center">
@@ -49,12 +48,11 @@ function App() {
       </header>
 
       <About />
-      <Subcription />
       <DuckBenefits />
+      <Subcription />
       <FAQs />
       <Story />
       <Newsletter />
-
       <Footer />
     </div>
   );
