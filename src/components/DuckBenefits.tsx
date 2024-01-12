@@ -33,16 +33,23 @@ export default function DuckBenefits() {
   ];
 
   return (
-    <section className="grid gap-12 justify-center w-screen py-24">
-      <h1 className=" text-4xl font-bold w-screen px-60">
+    <section className="grid gap-12 justify-center w-screen lg:max-w-[1300px] *:px-[36px] py-24">
+      <h1 className=" text-4xl font-bold w-[100%] lg:px-60">
         Duck debugging benefits
       </h1>
 
-      <ul className=" grid grid-cols-2 gap-y-12 gap-x-12 w-screen px-60 justify-items-start">
+      <ul className=" grid lg:grid-cols-2 gap-y-4 lg:gap-y-12 justify-center justify-items-center lg:gap-x-12 w-[100%] lg:max-w-[1300px] lg:px-60 lg:justify-items-start">
         {benefits.map((benefit) => (
-          <li key={benefit.id} className="w-80 ">
-            <h2 className="text-lg font-bold capitalize">{benefit.title}</h2>
-            <p className="text-darkBlue text-lg">{benefit.info}</p>
+          <li
+            key={benefit.id}
+            className="w-[100%] flex justify-center *:text-left"
+          >
+            <div>
+              <h2 className="text-lg font-bold capitalize">{benefit.title}</h2>
+              <p className="text-darkBlue text-lg w-[100%] lg:w-[50%] lg:max-w-[300px]">
+                {benefit.info}
+              </p>
+            </div>
           </li>
         ))}
       </ul>

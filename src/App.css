@@ -7,10 +7,6 @@
   text-wrap: pretty;
 }
 
-.App-header {
-  height: 80vh;
-}
-
 @layer components {
 h1 {
   @apply text-darkBlue font-bold rounded-lg uppercase

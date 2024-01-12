@@ -56,7 +56,7 @@ export default function About() {
       {/* TAB/MOB */}
 
       <div className="flex-col justify-center space-y-8 w-[100%] md:mx-[64px] p-[16px] m-auto lg:hidden">
-        <div className="w-[100%] md:max-w-[500px] md:m-auto  flex-col bg-[#1211118f] rounded-lg shadow-sm">
+        <div className="w-[100%] max-w-[500px] m-auto  flex-col bg-[#1211118f] rounded-lg shadow-sm">
           <img
             className=" w-[100%] h-[300px] rounded-t-lg hue-rotate-60 -scale-x-[1]"
             src={cards[0].img}
@@ -72,7 +72,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-[100%] md:max-w-[500px] md:m-auto flex-col bg-[#1211118f] rounded-lg shadow-sm">
+        <div className="w-[100%] max-w-[500px] m-auto flex-col bg-[#1211118f] rounded-lg shadow-sm">
           <img
             className=" w-[100%] h-[300px] rounded-t-lg"
             src={cards[1].img}

@@ -20,8 +20,8 @@ function App() {
           <li>contact us</li>
         </ul>
       </nav>
-      <header className="App-header bg-primary flex items-center">
-        <div className="grid lg:flex justify-center items-center gap-12 lg:max-w-[1310px] m-auto">
+      <header className="App-header bg-primary flex items-center pt-0 pb-[34px] lg:h-[80vh]">
+        <div className="grid lg:flex justify-center items-center gap-12 lg:max-w-[1310px] m-auto py-[16px]">
           <div className="px-[16px] lg:w-[50%]">
             <p className="font-bold align-text-top my-6 text-xl">
               Quacky Coders

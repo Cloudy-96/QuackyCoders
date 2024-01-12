@@ -31,10 +31,13 @@ export default function Subcription() {
   ];
 
   return (
-    <div className="flex justify-center align-center m-24">
-      <ul className="flex gap-12 w-auto justify-center">
+    <div className="flex justify-center align-center m-[24px] lg:m-24 ">
+      <ul className="flex gap-6 lg:gap-12 w-auto lg:justify-center pb-[12px] lg:pb-0 overflow-x-auto">
         {subOptions.map((sub) => (
-          <li key={`key${sub.id}`} className="bg-grey grid gap-11 rounded-3xl p-20">
+          <li
+            key={`key${sub.id}`}
+            className="bg-grey grid gap-11 rounded-3xl p-8 lg:p-20"
+          >
             <div className="grid gap-2">
               <p className="font-semibold">{sub.title}</p>
               <h2 className="font-bold text-3xl">
