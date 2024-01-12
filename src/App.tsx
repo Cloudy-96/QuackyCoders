@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App inline-block">
+    <div className="App">
       <nav>
         <ul className="flex w-[100%] gap-6 p-3 *:text-[20px]">
           <li>About Us</li>
@@ -21,12 +21,12 @@ function App() {
         </ul>
       </nav>
       <header className="App-header bg-primary flex items-center">
-        <div className="flex justify-center items-center gap-12 lg:max-w-[1310px] m-auto">
-          <div className="w-[50%]">
+        <div className="grid lg:flex justify-center items-center gap-12 lg:max-w-[1310px] m-auto">
+          <div className="px-[16px] lg:w-[50%]">
             <p className="font-bold align-text-top my-6 text-xl">
               Quacky Coders
             </p>
-            <h1 className="text-5xl my-6 ">
+            <h1 className="text-3xl lg:text-5xl my-6 ">
               Revolutionize your debugging with monthly rubber ducks!
             </h1>
 
@@ -40,7 +40,7 @@ function App() {
             </div>
           </div>
           <img
-            className="h-82 rounded-lg drop-shadow-lg"
+            className="w-[90%] m-auto mt-2 lg:h-[351px] rounded-lg drop-shadow-lg contain"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fd2%2F16%2Feb%2Fd216eba9ad0abca8ecd567e2ed49f9a4.jpg&f=1&nofb=1&ipt=47acee959a7b38139fff346ad31cf7d609e668b5dd861a4ebdd07d528fa3cb2d&ipo=images"
             alt="rubber duck decoding"
           />

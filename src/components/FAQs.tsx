@@ -27,11 +27,11 @@ export default function FAQs() {
   ];
   return (
     <section className="grid gap-12 justify-center w-screen my-24">
-      <h1 className="text-4xl font-bold w-screen px-60">
+      <h1 className="text-4xl font-bold w-screen text-center lg:text-left lg:px-60">
         Quacktions & Answers
       </h1>
 
-      <ul className=" grid grid-cols-2 gap-y-12 gap-x-40 w-screen px-60 justify-items-start">
+      <ul className=" grid lg:grid-cols-2 gap-y-12 gap-x-40  justify-center lg:px-60 lg:justify-items-start">
         {FAQs.map((FAQ) => (
           <li key={FAQ.id} className="w-80">
             <h2 className="text-lg font-bold  text-darkBlue capitalize">

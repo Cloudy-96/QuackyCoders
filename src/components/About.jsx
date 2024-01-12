@@ -16,7 +16,7 @@ export default function About() {
 
   return (
     <section className="bg-black flex  justify-center text-primary h-fit w-full py-[65px]">
-      <div className="flex-col justify-center gap-16 w-[100%] m-auto lg:max-w-[1310px]  space-y-[32px]">
+      <div className="hidden lg:flex lg:flex-col lg:justify-center gap-16 w-[100%] m-auto lg:max-w-[1310px]  space-y-[32px] lg:mx-[64px]">
         <div className="w-[100%] lg:max-w-[1310px] flex flex-row-reverse space-y-3 h-[300px] bg-[#1211118f] rounded-lg shadow-sm gap-3">
           <div className="w-[50%] relative">
             <img
@@ -49,6 +49,42 @@ export default function About() {
             </h2>
 
             <p className="w-7/12">{cards[1].description}</p>
+          </div>
+        </div>
+      </div>
+
+      {/* TAB/MOB */}
+
+      <div className="flex-col justify-center space-y-8 w-[100%] md:mx-[64px] p-[16px] m-auto lg:hidden">
+        <div className="w-[100%] md:max-w-[500px] md:m-auto  flex-col bg-[#1211118f] rounded-lg shadow-sm">
+          <img
+            className=" w-[100%] h-[300px] rounded-t-lg hue-rotate-60 -scale-x-[1]"
+            src={cards[0].img}
+            alt="Lots of rubber ducks"
+          />
+
+          <div className="self-center display grid gap-6 w-[100%] p-[16px] *:text-pretty">
+            <h2 className="uppercase font-bold text-xl text-pretty">
+              {cards[0].title}
+            </h2>
+
+            <p className="">{cards[0].description}</p>
+          </div>
+        </div>
+
+        <div className="w-[100%] md:max-w-[500px] md:m-auto flex-col bg-[#1211118f] rounded-lg shadow-sm">
+          <img
+            className=" w-[100%] h-[300px] rounded-t-lg"
+            src={cards[1].img}
+            alt="Lots of rubber ducks"
+          />
+
+          <div className="self-center display grid gap-6 w-[100%] p-[16px] *:text-pretty">
+            <h2 className="uppercase font-bold text-xl text-pretty">
+              {cards[1].title}
+            </h2>
+
+            <p className="">{cards[1].description}</p>
           </div>
         </div>
       </div>

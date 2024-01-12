@@ -4,6 +4,7 @@
 
 .App {
   text-align: left;
+  text-wrap: pretty;
 }
 
 .App-header {
