@@ -14,7 +14,7 @@ export default function Subcription() {
       title: "Quacktacular Quarterly",
       cost: 24.99,
       per: "QTR",
-      includes: ["1 Duck", "collector's edition", "Info Card", "Free Shipping"],
+      includes: ["1 Duck", "Collector's edition", "Info Card", "Free Shipping"],
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function Subcription() {
       per: "YR",
       includes: [
         "12 Ducks",
-        "collector's edition",
+        "Collector's edition",
         "Info Card",
         "Free Shipping",
       ],
@@ -47,7 +47,7 @@ export default function Subcription() {
 
             <ul>
               {sub.includes.map((item) => (
-                <li className="index">* {item}</li>
+                <li className="index py-[2px]"> 🦆 {item}</li>
               ))}
             </ul>
             <button className="bg-primary h-10 rounded-lg font-semibold">

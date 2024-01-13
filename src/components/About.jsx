@@ -15,7 +15,7 @@ export default function About() {
   ];
 
   return (
-    <section className="bg-black flex  justify-center text-primary h-fit w-full py-[65px]">
+    <section className="bg-black flex  justify-center text-primary h-fit w-full py-0 lg:py-[65px]">
       <div className="hidden lg:flex lg:flex-col lg:justify-center gap-16 w-[100%] m-auto lg:max-w-[1310px]  space-y-[32px] lg:mx-[64px]">
         <div className="w-[100%] lg:max-w-[1310px] flex flex-row-reverse space-y-3 h-[300px] bg-[#1211118f] rounded-lg shadow-sm gap-3">
           <div className="w-[50%] relative">
@@ -55,8 +55,8 @@ export default function About() {
 
       {/* TAB/MOB */}
 
-      <div className="flex-col justify-center space-y-8 w-[100%] md:mx-[64px] p-[16px] m-auto lg:hidden">
-        <div className="w-[100%] max-w-[500px] m-auto  flex-col bg-[#1211118f] rounded-lg shadow-sm">
+      <div className="flex flex-col-reverse justify-center space-y-8 w-[100%] md:mx-[64px] p-[16px] m-auto lg:hidden">
+        <div className="mt-8 w-[100%] max-w-[500px] m-auto  flex-col bg-[#1211118f] rounded-lg shadow-sm">
           <img
             className=" w-[100%] h-[300px] rounded-t-lg hue-rotate-60 -scale-x-[1]"
             src={cards[0].img}
@@ -72,7 +72,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-[100%] max-w-[500px] m-auto flex-col bg-[#1211118f] rounded-lg shadow-sm">
+        <div className=" w-[100%] max-w-[500px] m-auto flex-col bg-[#1211118f] rounded-lg shadow-sm">
           <img
             className=" w-[100%] h-[300px] rounded-t-lg"
             src={cards[1].img}

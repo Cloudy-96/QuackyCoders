@@ -21,3 +21,12 @@ img {
   pointer-events: none;
 }
 }
+
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+button:hover {
+  opacity: 70%;
+}

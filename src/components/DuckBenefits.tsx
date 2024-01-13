@@ -42,7 +42,7 @@ export default function DuckBenefits() {
         {benefits.map((benefit) => (
           <li
             key={benefit.id}
-            className="w-[100%] flex justify-center *:text-left"
+            className="w-[100%] flex lg:justify-center *:text-left"
           >
             <div>
               <h2 className="text-lg font-bold capitalize">{benefit.title}</h2>

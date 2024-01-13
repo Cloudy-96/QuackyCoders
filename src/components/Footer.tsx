@@ -4,26 +4,48 @@ import "../assets/twitter.svg";
 
 export default function Footer() {
   const socials = [
-    { id: 0, name: "twitter", socialLink: "", svg: "Twitter" },
-    { id: 1, name: "instagram", socialLink: "", svg: "Instagram" },
-    { id: 2, name: "facebook", socialLink: "", svg: "Facebook" },
-    { id: 3, name: "twitch", socialLink: "", svg: "Twitch" },
+    {
+      id: 0,
+      name: "twitter",
+      socialLink: "https://twitter.com/?lang=en-gb",
+      svg: "Twitter",
+    },
+    {
+      id: 1,
+      name: "instagram",
+      socialLink: "https://www.instagram.com/",
+      svg: "Instagram",
+    },
+    {
+      id: 2,
+      name: "facebook",
+      socialLink: "https://www.facebook.com/",
+      svg: "Facebook",
+    },
+    {
+      id: 3,
+      name: "twitch",
+      socialLink: "https://www.twitch.tv/",
+      svg: "Twitch",
+    },
   ];
 
   return (
-    <section className="grid justify-center gap-12">
+    <section className="flex-col justify-center space-y-4 md:space-y-8 lg:space-y-24 p-[24px]">
       {/* TODO: Make way bigger */}
-      <h1 className="font-extrabold text-[30em] ">2023</h1>
+      <h1 className="font-extrabold text-center text-[90px] md:text-[120px] lg:text-[20em] ">
+        2023
+      </h1>
 
-      <ul className="flex gap-24 justify-center">
+      <ul className="flex gap-4 lg:gap-24 justify-center">
         {socials.map((social) => (
           <li
             key={social.id}
-            className="flex justify-center align-center w-28 h-28"
+            className="flex justify-center align-center lg:w-28 lg:h-28"
           >
             {/* TODO: restyle and degub SVG */}
             <a
-              className="text-white"
+              className="text-white *:w-[40px] *:h-[40px] "
               href={social.socialLink}
               target="_blank"
               rel="noreferrer"
